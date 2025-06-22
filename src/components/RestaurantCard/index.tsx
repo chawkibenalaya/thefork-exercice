@@ -1,26 +1,10 @@
 import Image from 'next/image';
 import styles from './RestaurantCard.module.css';
 import RestaurantLink from '../RestaurantLink';
+import IconChatBubble from '@/components/IconChatBubble';
+import { RestaurantCardProps } from '@/types/restaurant';
+import { cleanName } from '@/lib/utils/cleanName';
 
-interface RestaurantCardProps {
-  name: string;
-  photo: string;
-  address: {
-    street: string;
-    locality: string;
-  };
-  averagePrice: {
-    amount: number;
-    currency: string;
-  };
-  aggregateRatings?: {
-    ratingValue: number;
-    reviewCount: number;
-  };
-  offer?: string;
-  id: string;
-  slug:string;
-}
 
 export default function RestaurantCard({
   name,
@@ -28,38 +12,52 @@ export default function RestaurantCard({
   address,
   averagePrice,
   aggregateRatings,
-  offer,
   id,
   slug,
+  bestOffer
 }: RestaurantCardProps) {
   return (
     <RestaurantLink restaurantID={id} restaurantSlug={slug}>
-    <div className={styles.card}>
-      <div className={styles.imageWrapper}>
-        <Image
-          src={photo}
-          alt={name}
-          fill
-          className={styles.image}
-          sizes="(max-width: 768px) 100vw, 400px"
-        />
-      </div>
-      <div className={styles.content}>
-        <h3 className={styles.name}>{name}</h3>
-        <p className={styles.address}>
-          {address.street}, {address.locality}
-        </p>
-        <p className={styles.price}>
-          {averagePrice.amount} {averagePrice.currency}
-        </p>
-        {aggregateRatings && (
-          <p className={styles.rating}>
-            ⭐ {aggregateRatings.ratingValue} ({aggregateRatings.reviewCount} avis)
+      <div className={styles.card}>
+        <div className={styles.imageWrapper}>
+          <Image
+            src={photo}
+            alt={name}
+            fill
+            className={styles.image}
+            sizes="(max-width: 768px) 100vw, 400px"
+
+          />
+        </div>
+        <div className={styles.content}>
+          <div className={styles.row}>
+            <div className={styles.box}>
+            <h3 className={styles.name}>{cleanName(name)}</h3>
+            </div>
+            {aggregateRatings && <div className={styles.relative}>
+              <p className={styles.rating}>
+                {aggregateRatings.ratingValue.toFixed(1)} </p>
+            </div>}
+          </div>
+
+          <div className={styles.row}>
+            <div className={styles.box}>
+              <p className={styles.address}>
+                {address.street}, {address.locality}
+              </p>
+            </div>
+            {aggregateRatings && <div className={styles.reviewCountBox}>
+                <IconChatBubble /> <p className={styles.reviewCount}> {aggregateRatings.reviewCount}</p>
+              </div>}
+          </div>
+
+          <p className={styles.price}>
+            {averagePrice.currency === 'EUR' ? '€' : '$'}  {averagePrice.value} average price
           </p>
-        )}
-        {offer && <p className={styles.offer}>🎁 {offer}</p>}
+
+        </div>
+        <button className={styles.book}>{bestOffer ? `Book • Up to ${bestOffer}`:'Book'}</button>
       </div>
-    </div>
     </RestaurantLink>
   );
 }

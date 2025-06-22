@@ -9,14 +9,34 @@ export interface Restaurant {
       country: string;
     };
     averagePrice: {
-      amount: number;
+      value: number;
       currency: string;
     };
     aggregateRatings?: {
       ratingValue: number;
       reviewCount: number;
     };
-    offer?: string;
+    bestOffer?: string;
+    slug: string;
+  }
+  
+  export interface RestaurantCardProps {
+    name: string;
+    photo: string;
+    address: {
+      street: string;
+      locality: string;
+    };
+    averagePrice: {
+      value: number;
+      currency: string;
+    };
+    aggregateRatings?: {
+      ratingValue: number;
+      reviewCount: number;
+    };
+    bestOffer?: string;
+    id: string;
     slug: string;
   }
   

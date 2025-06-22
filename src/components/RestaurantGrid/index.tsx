@@ -18,7 +18,7 @@ export default function RestaurantsGrid({ restaurants }: Props) {
           address={r.address}
           averagePrice={r.averagePrice}
           aggregateRatings={r.aggregateRatings}
-          offer={r.offer}
+          bestOffer={r.bestOffer}
           slug={r.slug}
         />
       ))}

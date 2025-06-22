@@ -26,7 +26,7 @@ export default function CityGridSection({ cities, selectedCity }: { cities: City
             <div className={`${styles.gridWrapper} ${!expanded ? styles.collapsed : ''}`}>
                 <div className={styles.grid}>
                     {cities.filter(c=>c.id!==selectedCity.id).map((city) => (
-                        <CityCard key={city.id} name={city.name} photo={city.photo} />
+                        <CityCard key={city.id} name={city.name} photo={city.photo} id={city.id} />
                     ))}
                 </div>
             </div>

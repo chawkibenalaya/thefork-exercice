@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--core-space-spacing-08);
-    padding: var(--core-space-spacing-08);
+    margin-top: 1rem;
   }
   
   @media (min-width: 600px) {

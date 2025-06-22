@@ -41,7 +41,7 @@ const typeDefs = gql`
   }
 
   type RestaurantAveragePrice {
-    amount: Int
+    value: Int!
     currency: String!
   }
 
@@ -53,7 +53,7 @@ const typeDefs = gql`
     address: RestaurantAddress!
     averagePrice: RestaurantAveragePrice!
     aggregateRatings: RestaurantAggregateRatings
-    offer: String
+    bestOffer: String
   }
 
   type Query {

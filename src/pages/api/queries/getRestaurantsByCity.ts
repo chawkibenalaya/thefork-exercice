@@ -14,14 +14,14 @@ export const GET_RESTAURANTS_BY_CITY = gql`
         country
       }
       averagePrice {
-        amount
+        value
         currency
       }
       aggregateRatings {
         ratingValue
         reviewCount
       }
-      offer
+      bestOffer
     }
   }
 `;

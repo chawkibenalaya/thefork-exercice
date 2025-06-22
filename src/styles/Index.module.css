@@ -23,6 +23,7 @@
   h2,
   h3 {
     font-weight: var(--core-typography-font-weight-medium);
+    margin-block: 1rem;
   }
 
   h1 {

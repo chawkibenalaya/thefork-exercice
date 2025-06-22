@@ -52,12 +52,11 @@ export default async function CityPage({ params }: Params) {
   const cities = cityData.data.getCities;
   const city = cities.find((c) => c.id === cityID);
   const restaurants = restaurantsData.data.getRestaurants;
-
   if (!city) notFound();
   return (
     <div>
       <CityGridSection cities={cities} selectedCity={city} />
-      <h2>Restaurants</h2>
+      <h2>Restaurants in {city.name}</h2>
       <RestaurantsGrid restaurants={restaurants} />
     </div>
   );

@@ -2,6 +2,7 @@
     overflow: hidden;
     transition: max-height 0.4s ease, opacity 0.3s ease;
     opacity: 1;
+    margin-bottom: 1.5rem;
   }
   
   .gridWrapper.collapsed {
@@ -12,10 +13,12 @@
   
   .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr; /* meme largeur pour les deux colonnes */
+    grid-template-rows: repeat(2, 1fr); /* deux lignes egales */
     gap: var(--core-space-spacing-06);
+    height: 500px;
   }
+  
   
   
   .image {
@@ -68,14 +71,12 @@
   .rotated {
     transform: rotate(180deg);
   }
+
   @media (max-width: 768px) {
     .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-  
-    .citycard.large {
-      grid-row: auto;
+        display: flex;
+        flex-direction: column;
     }
   }
+  
   
