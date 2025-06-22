@@ -1,6 +1,11 @@
-import { GET_CITIES } from '@/graphql/api/queries/getCities'; 
-import { createApolloClient } from '@/lib/apolloClient';
 import { notFound } from 'next/navigation';
+import { createApolloClient } from '@/lib/apolloClient';
+import { GET_RESTAURANTS_BY_CITY } from '@/pages/api/queries/getRestaurantsByCity';
+import { GET_CITIES } from '@/pages/api/queries/getCities';
+import RestaurantsGrid from '@/components/RestaurantGrid';
+import CityGridSection from '@/components/CityGrid';
+import { City } from '@/types/city';
+import { Restaurant } from '@/types/restaurant';
 
 interface Params {
   params: {
@@ -8,13 +13,20 @@ interface Params {
   };
 }
 
-// SEO dynamique
-export async function generateMetadata({ params }: Params) {
-  const { cityID } = params;
-  const client = createApolloClient();
-  const { data } = await client.query({ query: GET_CITIES });
+interface GetCitiesResponse {
+  getCities: City[];
+}
 
-  const city = data.getCities.find((c: any) => c.id === cityID);
+interface GetRestaurantsResponse {
+  getRestaurants: Restaurant[];
+}
+
+export async function generateMetadata({ params }: Params) {
+  const { cityID } = await params;
+
+  const client = createApolloClient();
+  const { data } = await client.query<GetCitiesResponse>({ query: GET_CITIES });
+  const city = data.getCities.find((c) => c.id === cityID);
 
   return {
     title: city ? `${city.name} – TheFork` : 'Ville inconnue – TheFork',
@@ -24,22 +36,29 @@ export async function generateMetadata({ params }: Params) {
   };
 }
 
-// Page dynamique pour afficher les détails d'une ville
 export default async function CityPage({ params }: Params) {
-  const { cityID } = params;
+  const { cityID } = await params;
+
   const client = createApolloClient();
-  const { data } = await client.query({ query: GET_CITIES });
 
-  const city = data.getCities.find((c: any) => c.id === cityID);
+  const [cityData, restaurantsData] = await Promise.all([
+    client.query<GetCitiesResponse>({ query: GET_CITIES }),
+    client.query<GetRestaurantsResponse>({
+      query: GET_RESTAURANTS_BY_CITY,
+      variables: { cityID },
+    }),
+  ]);
 
-  if (!city) {
-    notFound(); // 404 redirection si la ville n'existe pas
-  }
+  const cities = cityData.data.getCities;
+  const city = cities.find((c) => c.id === cityID);
+  const restaurants = restaurantsData.data.getRestaurants;
 
+  if (!city) notFound();
   return (
     <div>
-      <h1>{city.name}</h1>
-      <img src={city.photo} alt={city.name} width={400} />
+      <CityGridSection cities={cities} selectedCity={city} />
+      <h2>Restaurants</h2>
+      <RestaurantsGrid restaurants={restaurants} />
     </div>
   );
 }

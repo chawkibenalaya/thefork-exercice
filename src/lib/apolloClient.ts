@@ -1,11 +1,14 @@
-import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 export function createApolloClient() {
+  const isServer = typeof window === 'undefined';
+
   return new ApolloClient({
-    ssrMode: typeof window === 'undefined',
+    ssrMode: isServer,
     link: new HttpLink({
-      uri: 'http://localhost:3000/api/graphql',
-      // plus besoin de cross-fetch pour node > 18
+      uri: isServer
+        ? 'http://localhost:3000/api/graphql' // Pour dev local
+        : '/api/graphql', // Pour client navigateur (relatif)
     }),
     cache: new InMemoryCache(),
   });

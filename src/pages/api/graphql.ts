@@ -16,10 +16,7 @@ const resolvers = {
       const cityRestaurants = DATA.restaurantsByCities.find((results) => {
         return results.cityId === Number(args.cityID);
       });
-
-      if (!cityRestaurants) return [];
-
-      return cityRestaurants.restaurants ? cityRestaurants.restaurants : [];
+      return cityRestaurants?.restaurants || [];
     },
   },
 };
@@ -33,7 +30,7 @@ const typeDefs = gql`
 
   type RestaurantAddress {
     street: String!
-    postalCode: String!
+    postalCode: String
     locality: String!
     country: String!
   }
@@ -44,7 +41,7 @@ const typeDefs = gql`
   }
 
   type RestaurantAveragePrice {
-    amount: Int!
+    amount: Int
     currency: String!
   }
 
