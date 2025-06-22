@@ -18,7 +18,7 @@ export default function RestaurantCard({
 }: RestaurantCardProps) {
   return (
     <RestaurantLink restaurantID={id} restaurantSlug={slug}>
-      <div className={styles.card}>
+      <div className={styles.card} data-testid="restaurant-card">
         <div className={styles.imageWrapper}>
           <Image
             src={photo}

@@ -3,7 +3,6 @@ import '@testing-library/jest-dom';
 import CityGridSection from './index';
 import { City } from '@/types/city';
 
-// Mock CityCard component pour ne pas dépendre de son implémentation
 jest.mock('@/components/CityCard', () => ({ name, photo, id }: City) => (
   <div data-testid="city-card">{name}</div>
 ));

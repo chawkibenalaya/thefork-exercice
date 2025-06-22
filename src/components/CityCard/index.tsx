@@ -12,7 +12,7 @@ interface CityCardProps {
 export default function CityCard({ name, photo, id }: CityCardProps) {
 
   return (
-    <Link href={`/city/${id}`} className={styles.citycard}>
+    <Link href={`/city/${id}`} className={styles.citycard} data-testid="city-card">
         <Image
           src={photo}
           alt={name}

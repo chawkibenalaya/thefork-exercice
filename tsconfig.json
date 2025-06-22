@@ -36,5 +36,7 @@
 , "jest.config.js"  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "types": ["cypress/support/e2e.d.ts"]
+
 }
