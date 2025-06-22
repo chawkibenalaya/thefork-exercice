@@ -1,0 +1,136 @@
+/**
+ * DO NOT EDIT
+ */
+ :root {
+  --core-space-spacing-01: 0.125rem;
+  --core-space-spacing-02: 0.25rem;
+  --core-space-spacing-03: 0.375rem;
+  --core-space-spacing-04: 0.5rem;
+  --core-space-spacing-05: 0.75rem;
+  --core-space-spacing-06: 1rem;
+  --core-space-spacing-07: 1.25rem;
+  --core-space-spacing-08: 1.5rem;
+  --core-space-spacing-09: 2rem;
+  --core-space-spacing-10: 2.5rem;
+  --core-space-spacing-11: 3rem;
+  --core-space-spacing-12: 3.5rem;
+
+  --core-color-green-g100: #eef6f6;
+  --core-color-green-g200: #bddbd8;
+  --core-color-green-g300: #7ab8b0;
+  --core-color-green-g400: #03a08e;
+  --core-color-green-g500: #00665a;
+  --core-color-green-g600: #004d44;
+  --core-color-green-g700: #003d36;
+  --core-color-green-g800: #00332d;
+  --core-color-green-g900: #002924;
+  --core-color-light-green-lg100: #f0fff7;
+  --core-color-light-green-lg200: #d6ffe9;
+  --core-color-light-green-lg300: #b4fed6;
+  --core-color-light-green-lg400: #78fcb6;
+  --core-color-neutrals-n000: #ffffff;
+  --core-color-neutrals-n050: #fafafa;
+  --core-color-neutrals-n100: #eff0f0;
+  --core-color-neutrals-n200: #e5e6e6;
+  --core-color-neutrals-n300: #dadbdb;
+  --core-color-neutrals-n400: #a4afb6;
+  --core-color-neutrals-n500: #7e8e9a;
+  --core-color-neutrals-n600: #495b69;
+  --core-color-neutrals-n700: #212f3b;
+  --core-color-neutrals-n800: #091b2a;
+  --core-color-neutrals-n850: #05131f;
+  --core-color-neutrals-n900: #020f19;
+  --semantic-color-negative-background-color: #fdf2f4;
+  --semantic-color-negative-foreground-color: #b4132e;
+
+  --core-typography-font-weight-light: 300;
+  --core-typography-font-weight-default: 500;
+  --core-typography-font-weight-medium: 600;
+  --core-typography-font-weight-extra-bold: 800;
+  --semantic-typography-font-size-heading-h1: 2rem;
+  --semantic-typography-font-size-heading-h2: 1.5rem;
+  --semantic-typography-font-size-heading-h3: 1.125rem;
+  --semantic-typography-font-size-text-t1: 1rem;
+  --semantic-typography-font-size-text-t2: 0.875rem;
+  --semantic-typography-font-size-text-t3: 0.75rem;
+  --semantic-color-text-primary: var(--core-color-neutrals-n900);
+  --semantic-color-text-secondary: var(--core-color-neutrals-n600);
+  --semantic-color-text-primary-inverse: var(--core-color-neutrals-n050);
+  --semantic-color-text-secondary-inverse: var(--core-color-neutrals-n400);
+  --semantic-color-primary-color: var(--core-color-green-g500);
+  --semantic-color-on-primary-color: var(--core-color-green-g100);
+  --semantic-color-secondary-color: var(--core-color-green-g400);
+  --semantic-color-on-secondary-color: var(--core-color-neutrals-n000);
+  --semantic-color-accent-color: var(--core-color-light-green-lg200);
+  --semantic-color-on-accent-color: var(--core-color-green-g500);
+  --semantic-color-page-primary-background-color: var(--core-color-neutrals-n000);
+  --semantic-color-page-secondary-background-color: var(--core-color-neutrals-n050);
+
+  --semantic-sizing-container-padding: 2rem;
+  --semantic-sizing-container-max-width: calc(62rem + 2 * var(--semantic-sizing-container-padding));
+  --core-typography-font-family-product: 'Montserrat', sans-serif;
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--core-typography-font-family-product);
+  font-weight: var(--core-typography-font-weight-default);
+  line-height: 1.25;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  --link-color: var(--core-color-green-g500);
+
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+pre {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom:  var(--core-space-spacing-08);
+  padding: var(--core-space-spacing-06) var(--core-space-spacing-08);
+  background: var(--core-color-light-green-lg200);
+  
+  border: 0.0625rem solid #ddd;
+  border-left: 0.1875rem solid var(--core-color-green-g500);
+  
+  color: var(--semantic-color-on-accent-color);
+  font-family: monospace;
+  font-size: var(--semantic-typography-font-size-text-t1);
+  word-wrap: break-word;
+}
+
+code {
+  padding: var(--core-space-spacing-02) var(--core-space-spacing-03);
+  background-color: var(--core-color-light-green-lg200);
+  
+  border-radius: 0.3em;
+  
+  color: var(--semantic-color-on-accent-color);
+  font-family: monospace;
+  white-space: nowrap;
+}

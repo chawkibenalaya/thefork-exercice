@@ -1,0 +1,55 @@
+/**
+ * DO NOT EDIT
+ */
+.alert {
+  margin: 0;
+  padding: var(--core-space-spacing-09);
+  background-color: var(--semantic-color-negative-background-color);
+  
+  color: var(--semantic-color-negative-foreground-color);
+  text-align: center;
+}
+
+.noteList {
+  padding-left: 0;
+
+  font-weight: var(--core-typography-font-weight-default);
+}
+
+.wrapper {
+  padding-top: var(--core-space-spacing-11);
+
+  h1,
+  h2,
+  h3 {
+    font-weight: var(--core-typography-font-weight-medium);
+  }
+
+  h1 {
+    font-size: var(--semantic-typography-font-size-heading-h1);
+  }
+
+  h2 {
+    font-size: var(--semantic-typography-font-size-heading-h2);
+  }
+
+  h3 {
+    font-size: var(--semantic-typography-font-size-heading-h3);
+  }
+
+  ol,
+  ul {
+    margin-top: var(--core-space-spacing-06);
+    margin-bottom: var(--core-space-spacing-06);
+    list-style: disc;
+  }
+
+  p {
+    margin-top: var(--core-space-spacing-06);
+    margin-bottom: var(--core-space-spacing-06);
+  }
+
+  svg {
+    display: inline-block;
+  }
+}

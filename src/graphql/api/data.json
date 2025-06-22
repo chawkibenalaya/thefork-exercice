@@ -1,0 +1,886 @@
+{
+  "cities": [
+    {
+      "name": "Paris",
+      "id": 415144,
+      "photo": "https://c.tfstatic.com/w_640,h_244,c_fill,q_auto,f_auto/homepage_city/415144.jpg"
+    },
+    {
+      "name": "Lisbon",
+      "id": 665920,
+      "photo": "https://c.tfstatic.com/w_640,h_244,c_fill,q_auto,f_auto/homepage_city/665920.jpg"
+    },
+    {
+      "name": "Amsterdam",
+      "id": 19088,
+      "photo": "https://c.tfstatic.com/w_640,h_244,c_fill,q_auto,f_auto/homepage_city/19088.jpg"
+    },
+    {
+      "name": "Barcelona",
+      "id": 41710,
+      "photo": "https://c.tfstatic.com/w_640,h_244,c_fill,q_auto,f_auto/homepage_city/41710.jpg"
+    }
+  ],
+  "restaurantsByCities": [
+    {
+      "cityId": 415144,
+      "restaurants": [
+        {
+          "id": "137fab52-7b68-4770-8df7-fbbe66daf42f",
+          "slug": "mache",
+          "name": "Mâche",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/137fab52-7b68-4770-8df7-fbbe66daf42f/5b361b41-6269-4f10-a309-c54bda86ef3d.jpg",
+          "address": {
+            "street": "61 Rue de Chabrol",
+            "zipCode": "75010",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 8000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 299
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "bca2c752-0887-4d4c-b195-f0402d7c1ef5",
+          "slug": "tosca",
+          "name": "Tosca",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/bca2c752-0887-4d4c-b195-f0402d7c1ef5/3eedaa18-95b2-4cd7-b2b5-ee34e5efb310.jpg",
+          "address": {
+            "street": "20 Rue du Cirque",
+            "zipCode": "75008",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 10500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 675
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "e3a4ef96-0b29-46b5-8ac6-66788a4c4435",
+          "slug": "restaurant-auguste-gael-orieux",
+          "name": "Restaurant Auguste - Gaël Orieux",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/e3a4ef96-0b29-46b5-8ac6-66788a4c4435/4f06eca7-c9f1-466f-83e9-870610815ef8.jpg",
+          "address": {
+            "street": "54, rue de Bourgogne",
+            "zipCode": "75007",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 10000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 3561
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "d4627819-b3a6-489d-be76-2e1156f132b2",
+          "slug": "quelque-part",
+          "name": "Quelque Part",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/d4627819-b3a6-489d-be76-2e1156f132b2/590a1da1-851c-44ce-a7f1-4a0de3e06e30.jpg",
+          "address": {
+            "street": "1 Rue Ambroise Thomas",
+            "zipCode": "75009",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 10000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.2,
+            "reviewCount": 464
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "73b6748d-930f-4615-9768-7efd6e983b66",
+          "slug": "lucette-fait-des-crepes-rue-de-trevise",
+          "name": "Lucette fait des crêpes (Rue de Trévise)",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/73b6748d-930f-4615-9768-7efd6e983b66/b20f4b09-4cee-4d4e-9f9c-f8c4dfa4a00f.jpg",
+          "address": {
+            "street": "12 Rue de Trévise",
+            "zipCode": "75009",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 2000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.5,
+            "reviewCount": 397
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "c79fac7e-58c8-4092-85bb-50fe85aefde4",
+          "slug": "l-osteria-paris-chatelet",
+          "name": "L'Osteria Paris Chatelet",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/c79fac7e-58c8-4092-85bb-50fe85aefde4/1a5778d7-fa3e-40b8-818f-56942a072aaf.jpg",
+          "address": {
+            "street": "27 Rue Aubry le Boucher",
+            "zipCode": "75004",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 2200,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 552
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "f1003d26-06ec-446b-ab80-d4ef67428556",
+          "slug": "les-rupins",
+          "name": "Les Rupins",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/f1003d26-06ec-446b-ab80-d4ef67428556/e8f358c4-012a-4f03-a83f-6a5b3a5208f2.jpg",
+          "address": {
+            "street": "35 Boulevard de Magenta",
+            "zipCode": "75010",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 2800,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 20973
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "6644f596-f20f-4f76-96cf-8197aad66811",
+          "slug": "colvert",
+          "name": "Colvert",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6644f596-f20f-4f76-96cf-8197aad66811/d7327ada-d075-4c76-9398-d4f5305b1a81.jpg",
+          "address": {
+            "street": "30 Rue des Grands Augustins",
+            "zipCode": "75006",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 6500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.1,
+            "reviewCount": 3116
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "1b076cb6-6087-4b14-a319-4efb3ab579be",
+          "slug": "pleine-terre",
+          "name": "Pleine Terre",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/1b076cb6-6087-4b14-a319-4efb3ab579be/4cb8ac75-fdfc-4fd1-b9ab-f3001820043d.jpg",
+          "address": {
+            "street": "15 Rue de Bassano",
+            "zipCode": "75116",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 7000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 1227
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "55801c92-51d1-4fed-8a39-2cd92f5fa7d5",
+          "slug": "jules-restaurant",
+          "name": "Jules Restaurant",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/55801c92-51d1-4fed-8a39-2cd92f5fa7d5/da3326dd-17c3-4c91-a67f-41654885d375.jpg",
+          "address": {
+            "street": "119 Bis Rue Monge",
+            "zipCode": "75005",
+            "locality": "Paris",
+            "country": "France"
+          },
+          "averagePrice": {
+            "value": 4000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 179
+          },
+          "bestOffer": "-50%"
+        }
+      ]
+    },
+    {
+      "cityId": 665920,
+      "restaurants": [
+        {
+          "id": "216b3de1-9622-4cf9-89f7-2887c3c92e1b",
+          "slug": "lumbini",
+          "name": "Lumbini",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/216b3de1-9622-4cf9-89f7-2887c3c92e1b/567fdbd3-47a6-4bdb-b976-d2c346dfea12.jpg",
+          "address": {
+            "street": "Rua da Esperança - 42",
+            "zipCode": "1200-658",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1300,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 1969
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "7b6841d6-6757-4144-92c6-dc4eca387876",
+          "slug": "pizzaria-mama-s",
+          "name": "Pizzaria Mama's",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/7b6841d6-6757-4144-92c6-dc4eca387876/da4a20e4-ffb2-4f39-ae57-939e505114a2.jpg",
+          "address": {
+            "street": "R. Dom Domingos Jardo 21",
+            "zipCode": "1900-185",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1400,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.9,
+            "reviewCount": 251
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "5dc50d53-0b08-4589-89f7-e0b9a6dbaf98",
+          "slug": "cicero",
+          "name": "Cícero",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/5dc50d53-0b08-4589-89f7-e0b9a6dbaf98/513c31b7-16bb-41fa-8bea-0ec96a68b0bf.jpg",
+          "address": {
+            "street": "R. Saraiva de Carvalho 171",
+            "zipCode": "1350-264",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 6000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 612
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "673a9142-9e4e-4264-add4-bb5704cff4c8",
+          "slug": "lisboa-a-noite",
+          "name": "Lisboa à Noite",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/673a9142-9e4e-4264-add4-bb5704cff4c8/c10439c7-a052-45b4-93f6-b373df677e20.jpg",
+          "address": {
+            "street": "Rua das Gáveas 69",
+            "zipCode": "1200-284",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 4500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 3874
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "21ea6d21-4b5c-4214-94a8-2280d99fbeee",
+          "slug": "gurkha-saldanha",
+          "name": "Gurkha Saldanha",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/21ea6d21-4b5c-4214-94a8-2280d99fbeee/e809368c-3745-4afe-9014-b1894bb26c57.jpg",
+          "address": {
+            "street": "R. Latino Coelho 46A",
+            "zipCode": "1050-137",
+            "locality": "Lisbon",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1600,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 4692
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "b21105cc-5ad1-4bd8-8326-37fe45068cd0",
+          "slug": "cinnamon-restaurante-indiano-penha-de-franca",
+          "name": "Cinnamon - Restaurante Indiano | Penha de França",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/b21105cc-5ad1-4bd8-8326-37fe45068cd0/89bbc5fb-78c8-4091-9346-385505c7b48b.jpg",
+          "address": {
+            "street": "Av. Afonso III 70B",
+            "zipCode": "1900-185",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1200,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 972
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "183946c6-8335-4ee6-96d9-64456e726359",
+          "slug": "sto-restaurante-mercearia",
+          "name": "STŌ Restaurante & Mercearia",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/183946c6-8335-4ee6-96d9-64456e726359/641f7d9d-83cd-4884-aa03-0930f9bbc483.jpg",
+          "address": {
+            "street": "Rua dos Fanqueiros - 85",
+            "zipCode": "1100-226",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 2300,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.5,
+            "reviewCount": 289
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "2f56b0a3-05ad-4bb9-a31b-b10a40d00c50",
+          "slug": "ganesha-palace",
+          "name": "Ganesha Palace",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/2f56b0a3-05ad-4bb9-a31b-b10a40d00c50/162519e5-a646-4871-96d8-5e1e14a08c56.jpg",
+          "address": {
+            "street": "Avenida Álvares Cabral - 44/48",
+            "zipCode": "1250-018",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 1119
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "1431a7ae-fcdd-473e-b96d-cd31486877ff",
+          "slug": "gurkha-sao-bento",
+          "name": "Gurkha São Bento",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/1431a7ae-fcdd-473e-b96d-cd31486877ff/f08b15d8-a055-4a25-bbdb-cc80a0c25e2f.jpg",
+          "address": {
+            "street": "R. São Bento 318",
+            "zipCode": "1200-817",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1600,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 1887
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "5ee438bb-ff51-469b-a37d-4cef0aba3c5d",
+          "slug": "beher-lisboa",
+          "name": "Beher Lisboa",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/5ee438bb-ff51-469b-a37d-4cef0aba3c5d/82e7114a-a203-4b5e-874c-da8be82458c6.jpg",
+          "address": {
+            "street": "Rua da Prata - 249",
+            "zipCode": "1100-416",
+            "locality": "Lisboa",
+            "country": "Portugal"
+          },
+          "averagePrice": {
+            "value": 1800,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 438
+          },
+          "bestOffer": null
+        }
+      ]
+    },
+    {
+      "cityId": 19088,
+      "restaurants": [
+        {
+          "id": "0ae7acbd-b2bd-4ed3-989a-d7192125f587",
+          "slug": "amigo-grill-prinsengracht",
+          "name": "Amigo Grill Prinsengracht",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/0ae7acbd-b2bd-4ed3-989a-d7192125f587/4c55b402-b56d-42ed-8868-0f9ba871872b.jpg",
+          "address": {
+            "street": "Prinsengracht 188",
+            "zipCode": "1016",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9,
+            "reviewCount": 1958
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "8f5d7095-ceb0-42ef-bb98-7cf82c08dc6d",
+          "slug": "black",
+          "name": "Black",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/8f5d7095-ceb0-42ef-bb98-7cf82c08dc6d/7dea751d-9493-4b36-a981-63016bae6910.jpg",
+          "address": {
+            "street": "Prinsengracht 703",
+            "zipCode": "1017 JV",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.9,
+            "reviewCount": 1382
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "41044e82-ad57-445e-a3b1-e30bc1c69c48",
+          "slug": "bistro-brasserie-bleu",
+          "name": "Bistro Brasserie Bleu",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/41044e82-ad57-445e-a3b1-e30bc1c69c48/ff67d637-bd3f-48bc-9db1-3edf206613cc.jpg",
+          "address": {
+            "street": "Prinsenstraat 10HS",
+            "zipCode": "1015 DC",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.9,
+            "reviewCount": 1831
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "9a0d6839-d02b-4b4a-9418-7109ad0cfbb1",
+          "slug": "restaurant-red",
+          "name": "Restaurant Red",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/9a0d6839-d02b-4b4a-9418-7109ad0cfbb1/974587c9-992a-4add-bade-404772da4d58.jpg",
+          "address": {
+            "street": "Keizersgracht 594",
+            "zipCode": "1017 EN",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 4000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.7,
+            "reviewCount": 604
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "ec224243-11a6-4636-aa0a-0f4360413d66",
+          "slug": "de-royal-chophouse",
+          "name": "De Royal Chophouse",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/ec224243-11a6-4636-aa0a-0f4360413d66/86ba7510-e5c8-4091-8ee2-9ff72c6c6548.jpg",
+          "address": {
+            "street": "Amstelveenseweg 128",
+            "zipCode": "1075 XL",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 5000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 1176
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "906aea28-a41a-4ea9-a85a-4709a2fc3dee",
+          "slug": "restaurant-la-luna-steakhouse-grill",
+          "name": "Restaurant La Luna Steakhouse Grill ",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/906aea28-a41a-4ea9-a85a-4709a2fc3dee/f6710614-c106-468d-957d-6a75e4823465.jpg",
+          "address": {
+            "street": "Lange Leidsedwarsstraat 25",
+            "zipCode": "1017 NE",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.6,
+            "reviewCount": 525
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "647111a5-7c8b-4796-9a5a-2cb3e706356e",
+          "slug": "mount-everest-tandoori",
+          "name": "Mount Everest Tandoori",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/647111a5-7c8b-4796-9a5a-2cb3e706356e/16e9e236-5213-4085-8e9f-d18a1ecda780.jpg",
+          "address": {
+            "street": "Spreeuwenpark 3D",
+            "zipCode": "1021 GS",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 1268
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "b74a61ad-33ec-4faa-be23-442fe6aac9ee",
+          "slug": "mama-impasto",
+          "name": "Mama Impasto",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/b74a61ad-33ec-4faa-be23-442fe6aac9ee/92baafb6-abda-4947-af10-508107565595.jpg",
+          "address": {
+            "street": "Leidsekruisstraat 19",
+            "zipCode": "1017 RE",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 2900,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.1,
+            "reviewCount": 1250
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "578bd41f-580c-472a-be7b-dced45b22a17",
+          "slug": "deep-indian",
+          "name": "Deep Indian",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/578bd41f-580c-472a-be7b-dced45b22a17/db5c73f7-4089-4b43-9104-ffb09d89280c.jpg",
+          "address": {
+            "street": "Van Moerkerkenstraat 65",
+            "zipCode": "1064 KC",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 2500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 18
+          },
+          "bestOffer": null
+        },
+        {
+          "id": "a74cf169-e930-4475-8d34-e7894229fdc8",
+          "slug": "annapurna-kitchen",
+          "name": "Annapurna Kitchen",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/a74cf169-e930-4475-8d34-e7894229fdc8/8efbc452-fcb1-4f36-801c-f42a3a7ba067.jpg",
+          "address": {
+            "street": "Overtoom 548HS",
+            "zipCode": "1054 LM",
+            "locality": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "averagePrice": {
+            "value": 3300,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 659
+          },
+          "bestOffer": "-30%"
+        }
+      ]
+    },
+    {
+      "cityId": 41710,
+      "restaurants": [
+        {
+          "id": "cf6bb2d3-88b1-4259-84a2-94cf88234d72",
+          "slug": "shanti",
+          "name": "Shanti",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/cf6bb2d3-88b1-4259-84a2-94cf88234d72/2b0c6f73-9a16-4e47-b512-4c4dd4663e15.jpg",
+          "address": {
+            "street": "C/ Agustina Saragossa, 3-5",
+            "zipCode": "08017",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 1700,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 3652
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "af52b9a2-883d-4457-ae52-ec3af2a99854",
+          "slug": "casa-xef",
+          "name": "Casa Xef",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/af52b9a2-883d-4457-ae52-ec3af2a99854/0b42bff0-40ac-4d5f-ba68-ad8701ce70ec.png",
+          "address": {
+            "street": "Carrer de les Guilleries, 17",
+            "zipCode": "08012",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 3000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.1,
+            "reviewCount": 869
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "1d0f65af-27e8-47c1-9ebc-0e25bb5be80b",
+          "slug": "vi-negre",
+          "name": "Vi Negre",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/1d0f65af-27e8-47c1-9ebc-0e25bb5be80b/45455560-4cca-4629-9b9a-1ac6b5f7397d.jpg",
+          "address": {
+            "street": "Carrer de les Guilleries, 17",
+            "zipCode": "08012",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 3600,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.1,
+            "reviewCount": 6066
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "0624cd5a-550d-4ed4-912e-734dcb763124",
+          "slug": "la-tata",
+          "name": "La Tata",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/0624cd5a-550d-4ed4-912e-734dcb763124/dc13ff18-db0e-4a4f-9069-12bf85197d95.jpg",
+          "address": {
+            "street": "Carrer de Calàbria, 69",
+            "zipCode": "08015",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 3500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.8,
+            "reviewCount": 8541
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "a702bf80-bfef-4570-86b5-d01ab22f7f5c",
+          "slug": "dagma-by-hotel-barcelona-princess",
+          "name": "Dagma By Hotel Barcelona Princess",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/a702bf80-bfef-4570-86b5-d01ab22f7f5c/c1c98410-7f45-4579-be85-c530a8b97b67.jpg",
+          "address": {
+            "street": "Av. Diagonal, 1",
+            "zipCode": "08019",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 5000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.3,
+            "reviewCount": 382
+          },
+          "bestOffer": "-20%"
+        },
+        {
+          "id": "2ae238ef-5f4f-4117-9dae-364f0f9757a5",
+          "slug": "jaiba-mx",
+          "name": "Jaiba MX",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/2ae238ef-5f4f-4117-9dae-364f0f9757a5/c4188a50-ab02-4122-932b-148cf9eda583.jpg",
+          "address": {
+            "street": "Carrer de Déu i Mata, 69-99",
+            "zipCode": "08029",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 4500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.2,
+            "reviewCount": 185
+          },
+          "bestOffer": "-30%"
+        },
+        {
+          "id": "2af45257-4aa7-4fa7-854b-f55b94f40a87",
+          "slug": "lolo-mes-que-vins",
+          "name": "Lolo Mes que Vins",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/2af45257-4aa7-4fa7-854b-f55b94f40a87/9ca5567b-28a6-4872-b3d1-6a59457e2539.jpg",
+          "address": {
+            "street": "C. de Riego, 18",
+            "zipCode": "08014",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 2900,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.4,
+            "reviewCount": 493
+          },
+          "bestOffer": "-20%"
+        },
+        {
+          "id": "f61c5bf2-5f40-4ed6-92c8-b4a6da6c2352",
+          "slug": "brasa-gaucha-grill",
+          "name": "Brasa Gaucha Grill",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/f61c5bf2-5f40-4ed6-92c8-b4a6da6c2352/244679a0-e3dc-4688-8dc1-d94fdb2e580c.jpg",
+          "address": {
+            "street": "Carrer de Margarit, 31",
+            "zipCode": "08004",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 2800,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 214
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "4e521754-a4f1-473c-b1e4-03cbea737442",
+          "slug": "sushi-he-urgell",
+          "name": "Sushi He - Urgell",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/4e521754-a4f1-473c-b1e4-03cbea737442/3190142b-17fd-4135-91b6-c3a106fd206a.jpg",
+          "address": {
+            "street": "Carrer del Comte d'Urgell, 174",
+            "zipCode": "08036",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 1500,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 8.7,
+            "reviewCount": 1993
+          },
+          "bestOffer": "-50%"
+        },
+        {
+          "id": "677b8f70-71f9-4938-ab69-963f539399d2",
+          "slug": "speakeasy",
+          "name": "Speakeasy",
+          "photo": "https://res.cloudinary.com/tf-lab/image/upload/w_400,h_225,c_fill,g_auto:subject,q_auto,f_auto/restaurant/677b8f70-71f9-4938-ab69-963f539399d2/221ff752-f84b-44d0-af18-d33ffdea60c9.jpg",
+          "address": {
+            "street": "C/ Aribau, 162",
+            "zipCode": "08036",
+            "locality": "Barcelona",
+            "country": "Spain"
+          },
+          "averagePrice": {
+            "value": 8000,
+            "currency": "EUR"
+          },
+          "aggregateRatings": {
+            "ratingValue": 9.6,
+            "reviewCount": 2379
+          },
+          "bestOffer": "-50%"
+        }
+      ]
+    }
+  ]
+}
