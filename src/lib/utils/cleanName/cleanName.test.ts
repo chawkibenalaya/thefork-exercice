@@ -19,6 +19,6 @@ describe('cleanName', () => {
   });
 
   it('trim les espaces', () => {
-    expect(cleanName('   Restaurant   Pizza Roma  ')).toBe('Pizza Milano');
+    expect(cleanName('   Restaurant   Pizza Milano  ')).toBe('Pizza Milano');
   });
 });
