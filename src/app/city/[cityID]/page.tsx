@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { createApolloClient } from '@/lib/apolloClient';
-import { GET_RESTAURANTS_BY_CITY } from '@/pages/api/queries/getRestaurantsByCity';
-import { GET_CITIES } from '@/pages/api/queries/getCities';
+import { GET_RESTAURANTS_BY_CITY } from '@/app/api/graphql/queries/getRestaurantsByCity';
+import { GET_CITIES } from '@/app/api/graphql/queries/getCities';
 import RestaurantsGrid from '@/components/RestaurantGrid';
 import CityGridSection from '@/components/CityGrid';
 import { City } from '@/types/city';
@@ -36,21 +36,22 @@ export async function generateMetadata({ params }: Params) {
   };
 }
 
+export const revalidate = 60;
+
 export default async function CityPage({ params }: Params) {
   const { cityID } = await params;
 
   const client = createApolloClient();
-
   const [cityData, restaurantsData] = await Promise.all([
-    client.query<GetCitiesResponse>({ query: GET_CITIES }),
-    client.query<GetRestaurantsResponse>({
+    client.query({ query: GET_CITIES }),
+    client.query({
       query: GET_RESTAURANTS_BY_CITY,
       variables: { cityID },
     }),
   ]);
 
   const cities = cityData.data.getCities;
-  const city = cities.find((c) => c.id === cityID);
+  const city = cities.find((c:City) => c.id === cityID);
   const restaurants = restaurantsData.data.getRestaurants;
   if (!city) notFound();
   return (

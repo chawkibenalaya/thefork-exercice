@@ -1,11 +1,20 @@
-/**
- * DO NOT EDIT
- */
+// app/api/graphql/route.ts
 import { ApolloServer } from '@apollo/server';
 import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import { gql } from 'graphql-tag';
-
 import DATA from './data.json';
+import { NextRequest } from 'next/server';
+
+console.log('[GraphQL] Loading...');
+
+// LOG LES ERREURS GLOBALES
+process.on('uncaughtException', (err) => {
+  console.error('[GraphQL] Uncaught Exception:', err);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('[GraphQL] Unhandled Rejection:', reason);
+});
+
 
 const resolvers = {
   Query: {
@@ -13,6 +22,8 @@ const resolvers = {
       return DATA.cities;
     },
     getRestaurants: async (_: any, args: { cityID: string }) => {
+      console.log('[getRestaurants] found =', args);
+      
       const cityRestaurants = DATA.restaurantsByCities.find((results) => {
         return results.cityId === Number(args.cityID);
       });
@@ -67,4 +78,8 @@ const server = new ApolloServer({
   typeDefs,
 });
 
-export default startServerAndCreateNextHandler(server);
+const handler = startServerAndCreateNextHandler<NextRequest>(server, {
+  context: async () => ({}),
+});
+
+export { handler as GET, handler as POST };
